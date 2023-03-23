@@ -2,28 +2,25 @@
 
 <script>
 export default {
-    name: 'AppHeaderLogo',
+    name: 'AppMainPhotos',
     data() {
         return {
-
         }
+
     }
 }
 </script>
 
 <!-- PARTE HTML -->
 <template>
-    <div id="h_logo_box"><img src="../assets/dc-logo.png" alt="logo"></div>
+    <div class="m_photos">---- Content goes Here ---- </div>
 </template>
 
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
-#h_logo_box {
-    width: 80px;
-    height: 80px;
-
-    img {
-        width: 100%;
-    }
+.m_photos {
+    font-size: 1.25rem;
+    padding: 3.125rem 0;
+    background-color: #1c1c1c;
 }
 </style>

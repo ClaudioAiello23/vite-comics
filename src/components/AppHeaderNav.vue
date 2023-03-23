@@ -66,12 +66,29 @@ export default {
 <template>
     <nav>
         <ul>
-            <li>
-                <a href="">PROVA NAV</a>
+            <li v-for="h_nav in headerMenu">
+                <a href="#">{{ h_nav.menuName }}</a>
             </li>
         </ul>
     </nav>
 </template>
 
 <!-- PARTE SCSS-->
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+nav {
+
+
+    li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 .75rem;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+    }
+}
+</style>
