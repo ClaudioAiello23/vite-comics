@@ -1,19 +1,23 @@
 <!-- PARTE VUE JS-->
 <script>
-// import dei files dalla cartella components
-// import dei files dalla cartella components
+import AppHeader from './components/AppHeader.vue'  // import dei files dalla cartella components
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
+
 export default {
   components: {
-    // aggiunta files dall'oggetto components 
-    // aggiunta files dall'oggetto components
+    AppHeader, // aggiunta files dall'oggetto components 
+    AppMain,
+    AppFooter,
   }
 }
 </script>
 
 <!-- PARTE HTML -->
 <template>
-  <AppTitle />
-  <AppHero />
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
 </template>
 
 <!-- PARTE CSS -->
