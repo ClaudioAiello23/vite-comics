@@ -1,8 +1,9 @@
 <!-- PARTE VUE JS-->
 <script>
-import AppHeader from './components/AppHeader.vue'  // import dei files dalla cartella components
-import AppMain from './components/AppMain.vue'
-import AppFooter from './components/AppFooter.vue'
+import AppHeader from './components/AppHeader.vue';  // import dei files dalla cartella components
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+
 
 export default {
   components: {

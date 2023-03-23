@@ -1,9 +1,9 @@
 <!-- PARTE VUE JS-->
 <script>
 export default {
+    name: 'AppMain',
     data() {
         return {
-            name: 'AppMain'
         }
 
     }

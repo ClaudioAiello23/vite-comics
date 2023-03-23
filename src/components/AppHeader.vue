@@ -1,51 +1,18 @@
 <!-- PARTE VUE JS-->
 <script>
+import AppHeaderNav from './AppHeaderNav.vue';
+import AppHeaderLogo from './AppHeaderLogo.vue';
+
 export default {
+    name: 'AppHeader',
+    components: {
+        AppHeaderNav,
+        AppHeaderLogo
+    },
+
     data() {
         return {
-            name: 'AppHeader',
-            headerMenu: [
-                {
-                    menuName: 'CHARACTERS'
 
-                },
-                {
-                    menuName: 'COMICS'
-
-                },
-                {
-                    menuName: 'MOVIES'
-
-                },
-                {
-                    menuName: 'TV'
-
-                },
-                {
-                    menuName: 'GAMES'
-
-                },
-                {
-                    menuName: 'COLLECTIBLES'
-
-                },
-                {
-                    menuName: 'VIDEOS'
-
-                },
-                {
-                    menuName: 'FANS'
-
-                },
-                {
-                    menuName: 'NEWS'
-
-                },
-                {
-                    menuName: 'SHOP'
-
-                },
-            ]
         }
     }
 }
@@ -53,11 +20,12 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <nav>
-        <ul>
-            <li>{{ headerMenu[0].menuName }}</li>
-        </ul>
-    </nav>
+    <header>
+        <!-- Collegamento Logo -->
+        <AppHeaderLogo />
+        <!-- Collegamento menu Nav -->
+        <AppHeaderNav />
+    </header>
 </template>
 
 <!-- PARTE SCSS-->

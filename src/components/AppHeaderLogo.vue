@@ -1,18 +1,19 @@
 <!-- PARTE VUE JS-->
+
 <script>
 export default {
-    name: 'AppFooter',
+    name: 'AppHeaderLogo',
     data() {
         return {
-        }
 
+        }
     }
 }
 </script>
 
 <!-- PARTE HTML -->
 <template>
-    FOOTER
+    <div><img src="" alt="logo"></div>
 </template>
 
 <!-- PARTE SCSS-->
