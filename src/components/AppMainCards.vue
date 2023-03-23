@@ -6,7 +6,7 @@ export default {
         return {
             cards: [
                 {
-                    cardImg: '../assets/buy-comics-digital-comics.png',
+                    cardImg: 'buy-comics-digital-comics.png',
                     cardName: 'DIGITAL COMICS',
                 },
                 {
@@ -37,13 +37,12 @@ export default {
     <div class="card_container">
         <div class="card_box" v-for="(cardTitle, cardImg) in cards">
             <div>
-                <img v-bind:src="cardImg.cardImg" alt="img">
+                <img v-bind:src="cardImg.Img" alt="img">
             </div>
             <div class="single_card"> {{ cardTitle.cardName }}</div>
         </div>
     </div>
 </template>
-
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
 .card_container {
