@@ -43,6 +43,7 @@ export default {
         </div>
     </div>
 </template>
+
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
 .card_container {

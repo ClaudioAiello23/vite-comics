@@ -46,7 +46,7 @@ main {
     }
 
     .m_container_2 {
-        background-color: #0282f9;
+        background-color: $text_second_color; //utilizzo della variabile impostata all'inizio di style
     }
 }
 </style>
