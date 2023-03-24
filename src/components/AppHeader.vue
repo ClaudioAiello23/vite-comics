@@ -2,12 +2,15 @@
 <script>
 import AppHeaderNav from './AppHeaderNav.vue';
 import AppHeaderLogo from './AppHeaderLogo.vue';
+import AppHeaderJumbo from './AppHeaderJumbo.vue';
+
 
 export default {
     name: 'AppHeader',
     components: {
         AppHeaderNav,
-        AppHeaderLogo
+        AppHeaderLogo,
+        AppHeaderJumbo
     },
 
     data() {
@@ -27,6 +30,7 @@ export default {
             <!-- Collegamento menu Nav -->
             <AppHeaderNav />
         </div>
+        <AppHeaderJumbo />
     </header>
 </template>
 
