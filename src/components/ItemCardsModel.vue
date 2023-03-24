@@ -5,7 +5,7 @@ export default {
     name: 'ItemCards',
     data() {
         return {
-            cards: [
+            cards: [ //da modificare
                 {
                     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                     "price": "$19.99",
@@ -86,14 +86,7 @@ export default {
 </script>
 
 <!-- PARTE HTML -->
-<template>
-    <div class="m_photos">---- Content goes Here ---- </div>
-</template>
+<template></template>
 
 <!-- PARTE SCSS-->
-<style lang="scss" scoped>
-.m_photos {
-    font-size: 1.25rem;
-    padding: 3.125rem 0;
-}
-</style>
+<style lang="scss" scoped></style>

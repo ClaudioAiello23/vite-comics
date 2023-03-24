@@ -1,13 +1,13 @@
 <!-- PARTE VUE JS-->
 <script>
-import ItemCards from './ItemCards.vue';
+import AppMainCards from './AppMainCards.vue';
 import AppMainIcons from './AppMainIcons.vue';
 
 
 export default {
     name: 'AppMain',
     components: {
-        ItemCards,
+        AppMainCards,
         AppMainIcons
     },
     data() {
@@ -23,7 +23,7 @@ export default {
     <main>
         <div class="m_container_1">
             <div class="m_box_1">
-                <ItemCards />
+                <AppMainCards />
             </div>
         </div>
         <div class="m_container_2">
