@@ -18,8 +18,6 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <div class="card">
-        <div><img v-bind:src="img"></div>
-        <h3>{{ title }}</h3>
-    </div>
+    <div class="card"><img v-bind:src="img"></div>
+    <h3>{{ title }}</h3>
 </template>

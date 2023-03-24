@@ -12,73 +12,73 @@ export default {
         return {
             cards: [
                 {
-                    "thumb": 'buy-comics-subscriptions.png',
+                    "thumb": 'https://i.ibb.co/GCN80gY/superman.png',
                     "price": "$19.99",
                     "series": "Action Comics",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://images.app.goo.gl/CCKN2EFPjQFfqYxF7",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$3.99",
                     "series": "American Vampire 1976",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/gn-covers/2018/08/AQMv4_UW_153-001_HD_5b7efa1745a9b8.08589135.jpg?itok=HPTtnrsb",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$16.99",
                     "series": "Aquaman",
                     "type": "graphic novel"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/06/batgirl_v5_1_5b23e1f1124941.50950783.jpg?itok=VnrJah76",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$2.99",
                     "series": "Batgirl",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/BM_56_300-001_HD_5ba137a85c3bf3.33122291.jpg?itok=3FHJQYJZ",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$3.99",
                     "series": "Batman",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/BM_56_300-001_HD_5ba137a85c3bf3.33122291.jpg?itok=3FHJQYJZ",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$2.99",
                     "series": "Batman Beyond",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2019/08/BMSM_5d4361b7116261.74371456.jpg?itok=kEDR2OL8",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$3.99",
                     "series": "Batman/Superman",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/BMSMANN_01_300-001_HD_5f5ff17fa1d665.74704970.jpg?itok=azz5sfGk",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$4.99",
                     "series": "Batman/Superman Annual",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/BMTJWZ_01_300-001_HD_5f5ff2307dcb37.34652945.jpg?itok=VswVjLR8",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$5.99",
                     "series": "Batman: The Joker War Zone",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/08/cover-v2_5f40314645a734.37285065.png?itok=ImNM2QBY",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$6.99",
                     "series": "Batman: Three Jokers",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/10/BMWK_HQ_01_300-001_HD_5f7cb4945e13f6.89501032.jpg?itok=sVwALbUX",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$4.99",
                     "series": "Batman: White Knight Presents: Harley Quinn",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/gn-covers/2019/04/CTWv1_CC_144-001_HD_5ca5299a751963.53054221.jpg?itok=ooPaoLDq",
+                    "thumb": "https://i.ibb.co/GCN80gY/superman.png",
                     "price": "$16.99",
                     "series": "Catwoman",
                     "type": "graphic novel"
@@ -91,19 +91,37 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <section>
-        <div class="cards_container">
-            <ItemCardsModel class="comics" v-for="comics in cards" v-bind:img="comics.thumb" v-bind:title="comics.series" />
+    <section class="cards_container">
+        <div v-for="comics in cards">
+            <ItemCardsModel v-bind:img="comics.thumb" v-bind:title="comics.series.toUpperCase()" />
         </div>
     </section>
 </template>
 
 <!-- PARTE SCSS-->
-<style lang="scss" scoped>
-.comics {
-    width: 11.875rem;
-    height: 11.875rem;
-    border: 1px solid black;
-    background-color: red;
-}
+<style lang="scss"> //rimosso lo scoped da <style> per ereditare la classe "card" del modello component ItemCardsModel
+
+ .cards_container {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+
+     .card {
+         margin-top: 1.875rem;
+         margin-bottom: .625rem;
+         width: 11.25rem;
+         height: 11.25rem;
+         background-color: red;
+
+         img {
+             width: 100%;
+         }
+     }
+
+     h3 {
+         font-size: .8125rem;
+         width: 11.875rem;
+         margin-bottom: 1.25rem;
+     }
+ }
 </style>
