@@ -131,7 +131,7 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <div class="f_menu_container">
+    <div class="f_box_1">
         <div class="f_nav_1">
             <h2> {{ titleComics }}</h2>
             <nav>
@@ -177,7 +177,7 @@ export default {
 
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
-.f_menu_container {
+.f_box_1 {
     display: flex;
     padding: 3.125rem 0;
 

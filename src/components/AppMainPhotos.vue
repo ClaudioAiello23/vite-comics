@@ -21,6 +21,5 @@ export default {
 .m_photos {
     font-size: 1.25rem;
     padding: 3.125rem 0;
-    background-color: #1c1c1c;
 }
 </style>

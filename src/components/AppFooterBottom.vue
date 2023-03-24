@@ -13,7 +13,7 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <div class="footer_bottom_container">
+    <div class="f_box_2">
         <div><button>A</button></div>
         <div>
             <div>FOLLOWUS</div>
@@ -28,8 +28,8 @@ export default {
 
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
-.footer_bottom_container {
-    padding: 1.875rem;
+.f_box_2 {
+    padding: 1.875rem 0;
     display: flex;
     justify-content: space-between;
 }
