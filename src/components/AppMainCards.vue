@@ -91,15 +91,19 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <section class="cards_container">
-        <div v-for="comics in cards">
-            <ItemCardsModel v-bind:img="comics.thumb" v-bind:title="comics.series.toUpperCase()" />
+    <section class="cards_section">
+        <div class="cards_container">
+            <div v-for="comics in cards">
+                <ItemCardsModel v-bind:img="comics.thumb" v-bind:title="comics.series.toUpperCase()" />
+            </div>
         </div>
+        <button type="button">LOAD MORE</button>
     </section>
 </template>
 
 <!-- PARTE SCSS-->
 <style lang="scss"> //rimosso lo scoped da <style> per ereditare la classe "card" del modello component ItemCardsModel
+ @use '../assets/styles/partials/variables' as *;
 
  .cards_container {
      display: flex;
@@ -111,7 +115,6 @@ export default {
          margin-bottom: .625rem;
          width: 11.25rem;
          height: 11.25rem;
-         background-color: red;
 
          img {
              width: 100%;
@@ -123,5 +126,22 @@ export default {
          width: 11.875rem;
          margin-bottom: 1.25rem;
      }
+ }
+
+ .cards_section {
+     display: flex;
+     flex-direction: column;
+
+     button {
+         align-self: center;
+         background-color: $text_second_color;
+         color: $text_first_color;
+         font-weight: bold;
+         padding: .9375rem 3.125rem;
+         margin: 2.5rem 0 1.25rem 0;
+         border: none;
+         cursor: pointer;
+     }
+
  }
 </style>
