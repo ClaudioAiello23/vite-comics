@@ -13,7 +13,7 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <div id="h_logo_box"><img src="../assets/dc-logo.png" alt="logo"></div>
+    <div id="h_logo_box"><img src="../assets/img/dc-logo.png" alt="logo"></div>
 </template>
 
 <!-- PARTE SCSS-->

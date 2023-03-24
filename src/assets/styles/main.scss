@@ -1,0 +1,18 @@
+@use './partials/reset' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/fonts' as *;
+
+/*
+************************
+MAIN RULES
+************************
+*/
+.h_container,
+.m_box_1,
+.m_box_2,
+.f_box_1,
+.f_box_2 {
+    margin: var(--container_margin);
+    width: var(--container_width);
+}

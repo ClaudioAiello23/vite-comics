@@ -37,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 footer {
     .f_container_1 {
-        background-image: url(../assets/footer-bg.jpg);
+        background-image: url(../assets/img/footer-bg.jpg);
         background-size: cover;
     }
 
