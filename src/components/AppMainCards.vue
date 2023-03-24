@@ -1,19 +1,24 @@
 <!-- PARTE VUE JS-->
 
 <script>
+import ItemCardsModel from './ItemCardsModel.vue';
+
 export default {
     name: 'AppMainCards',
+    components: {
+        ItemCardsModel
+    },
     data() {
         return {
             cards: [
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
+                    "thumb": 'buy-comics-subscriptions.png',
                     "price": "$19.99",
                     "series": "Action Comics",
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/AV1976_01_300-001_HD_5f738f6e39ddd7.18205602.jpg?itok=VgdYdJ01",
+                    "thumb": "https://images.app.goo.gl/CCKN2EFPjQFfqYxF7",
                     "price": "$3.99",
                     "series": "American Vampire 1976",
                     "type": "comic book"
@@ -79,7 +84,6 @@ export default {
                     "type": "graphic novel"
                 }
             ]
-
         }
     }
 }
@@ -87,13 +91,19 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <div class="m_cards">---- Content goes Here ---- </div>
+    <section>
+        <div class="cards_container">
+            <ItemCardsModel class="comics" v-for="comics in cards" v-bind:img="comics.thumb" v-bind:title="comics.series" />
+        </div>
+    </section>
 </template>
 
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
-.m_cards {
-    font-size: 1.25rem;
-    padding: 3.125rem 0;
+.comics {
+    width: 11.875rem;
+    height: 11.875rem;
+    border: 1px solid black;
+    background-color: red;
 }
 </style>
