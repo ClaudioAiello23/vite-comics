@@ -177,19 +177,20 @@ export default {
 
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+
 .f_box_1 {
     display: flex;
-    padding: 3.125rem 0;
+    padding: 2.5rem 0;
 
     h2 {
         padding: 0.625rem 0;
         font-size: 1.25rem;
-        color: white;
+        color: $text_first_color;
     }
 
     .f_nav_2 {
         padding: 0 1.875rem;
-
     }
 
     nav {

@@ -36,8 +36,10 @@ export default {
 
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *; //imposto l'uso della variabile dichiarata in assets-styles-partials-variables
+
 main {
-    color: white;
+    color: $text_first_color; //utilizzo della variabile impostata all'inizio di style
 
     .m_container_1 {
         background-color: #1c1c1c;
