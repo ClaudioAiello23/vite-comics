@@ -39,7 +39,7 @@ export default {
         <div class="social">
             <div class="follow">FOLLOW US</div>
             <div class="social_icons" v-for="social in socials">
-                <a href="#"><img v-bind:src="social.socialImg" alt="img"></a>
+                <a href="#"><img v-bind:src="'images/' + social.socialImg" alt="img"></a>
             </div>
         </div>
     </div>
@@ -65,6 +65,7 @@ export default {
 
     .social {
         display: flex;
+        align-items: center;
 
         .follow {
             color: $text-second-color;

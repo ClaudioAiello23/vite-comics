@@ -22,7 +22,7 @@ export default {
                     iconName: 'COMIC SHOP LOCATOR',
                 },
                 {
-                    iconImg: 'buy-dc-power-visa.png',
+                    iconImg: 'buy-dc-power-visa.svg',
                     iconName: 'DC POWER VISA',
                 },
             ]
@@ -35,11 +35,11 @@ export default {
 <!-- PARTE HTML -->
 <template>
     <div class="icon_container">
-        <div class="icon_box" v-for="(iconTitle, iconImg) in icons">
-            <div>
-                <img v-bind:src="iconImg.iconImg" alt="img">
+        <div class="icon_box" v-for="icon in icons">
+            <div class="img_box">
+                <img v-bind:src="'images/' + icon.iconImg" alt="img">
             </div>
-            <div class="single_card"> {{ iconTitle.iconName }}</div>
+            <div class="icon_name"> {{ icon.iconName }}</div>
         </div>
     </div>
 </template>
@@ -53,6 +53,21 @@ export default {
 
 .icon_box {
     display: flex;
-    padding: 3.75rem 1.875rem;
+    align-items: center;
+    padding: 2.5rem 1.875rem;
+
+    .img_box {
+        width: 2.5rem;
+        height: 3.125rem;
+        margin-right: 0.625rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .icon_name {
+        font-size: .8125rem;
+    }
 }
 </style>

@@ -14,7 +14,7 @@ export default {
 <!-- PARTE HTML -->
 <template>
     <div id="h_jumbo_box">
-        <img src="../assets/img/jumbotron.jpg" alt="logo">
+        <img src="/images/jumbotron.jpg" alt="logo">
     </div>
 </template>
 

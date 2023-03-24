@@ -40,8 +40,9 @@ export default {
 <style lang="scss" scoped>
 footer {
     .f_container_1 {
-        background-image: url(../assets/img/footer-bg.jpg);
+        background-image: url(/images/footer-bg.jpg);
         background-size: cover;
+        height: 385px; //impostata altezza fissa a footer container 1 per gestione overflow:hidden su logo grande
 
         .f_box_1 {
             display: flex;
@@ -50,10 +51,6 @@ footer {
 
     .f_container_2 {
         background-color: #303030;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
     }
 }
 </style>

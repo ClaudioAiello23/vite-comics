@@ -13,7 +13,7 @@ export default {
 
 <!-- PARTE HTML -->
 <template>
-    <div id="f_logo_box"><img src="../assets/img/dc-logo-bg.png" alt="logo"></div>
+    <div id="f_logo_box"><img src="/images/dc-logo-bg.png" alt="logo"></div>
 </template>
 
 <!-- PARTE SCSS-->
@@ -23,6 +23,7 @@ export default {
     img {
         width: 100%;
         transform: scale(1.5);
+        overflow: hidden; //overflow hidden non nasconde l'eccedenza del logo grande - da sistemare
     }
 }
 </style>
