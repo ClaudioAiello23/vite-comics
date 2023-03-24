@@ -38,6 +38,7 @@ export default {
 footer {
     .f_container_1 {
         background-image: url(../assets/footer-bg.jpg);
+        background-size: cover;
     }
 
     .f_container_2 {
