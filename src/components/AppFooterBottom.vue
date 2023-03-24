@@ -14,7 +14,7 @@ export default {
 <!-- PARTE HTML -->
 <template>
     <div class="f_box_2">
-        <div><button>A</button></div>
+        <div><button type="button">SIGN-UP NOW!</button></div>
         <div>
             <div>FOLLOWUS</div>
             <div>
@@ -32,5 +32,13 @@ export default {
     padding: 1.875rem 0;
     display: flex;
     justify-content: space-between;
+
+    button {
+        background-color: #303030;
+        color: white;
+        padding: .9375rem;
+        border: 2px solid #0282f9;
+        cursor: pointer;
+    }
 }
 </style>
