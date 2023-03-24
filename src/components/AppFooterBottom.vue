@@ -5,7 +5,28 @@ export default {
     name: 'AppFooterBottom',
     data() {
         return {
-
+            socials: [
+                {
+                    socialImg: 'footer-facebook.png',
+                    socialName: 'FACEBOOK',
+                },
+                {
+                    socialImg: 'footer-twitter.png',
+                    socialName: 'TWITTER',
+                },
+                {
+                    socialImg: 'footer-youtube.png',
+                    socialName: 'YOUTUBE',
+                },
+                {
+                    socialImg: 'footer-pinterest.png',
+                    socialName: 'PINTEREST',
+                },
+                {
+                    socialImg: 'footer-periscope.png',
+                    socialName: 'PERISCOPE',
+                }
+            ]
         }
     }
 }
@@ -17,10 +38,8 @@ export default {
         <div><button type="button">SIGN-UP NOW!</button></div>
         <div class="social">
             <div class="follow">FOLLOW US</div>
-            <div>
-                <ul>
-                    <li><a href="#">CBEFG</a></li>
-                </ul>
+            <div class="social_icons" v-for="social in socials">
+                <a href="#"><img v-bind:src="social.socialImg" alt="img"></a>
             </div>
         </div>
     </div>
@@ -34,6 +53,7 @@ export default {
     padding: 1.875rem 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     button {
         background-color: #303030;
@@ -44,9 +64,16 @@ export default {
     }
 
     .social {
+        display: flex;
+
         .follow {
             color: $text-second-color;
             font-weight: bold;
+            padding-right: 1.25rem;
+        }
+
+        .social_icons {
+            padding-left: .9375rem;
         }
     }
 }
