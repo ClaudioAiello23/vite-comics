@@ -77,7 +77,6 @@ export default {
 <style lang="scss" scoped>
 nav {
 
-
     li {
         list-style: none;
         display: inline-block;

@@ -42,7 +42,6 @@ footer {
     .f_container_1 {
         background-image: url(/images/footer-bg.jpg);
         background-size: cover;
-        height: 385px; //impostata altezza fissa a footer container 1 per gestione overflow:hidden su logo grande
 
         .f_box_1 {
             display: flex;
@@ -51,6 +50,8 @@ footer {
 
     .f_container_2 {
         background-color: #303030;
+        position: relative; //impostata pos.relative + z-index:1 per priorità background che nasconde l'eccedenza del logo grande DC
+        z-index: 1;
     }
 }
 </style>

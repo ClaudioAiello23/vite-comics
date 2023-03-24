@@ -98,6 +98,7 @@ export default {
             </div>
         </div>
         <button type="button">LOAD MORE</button>
+        <button id="special_btn">CURRENT SERIES</button>
     </section>
 </template>
 
@@ -105,13 +106,39 @@ export default {
 <style lang="scss"> //rimosso lo scoped da <style> per ereditare la classe "card" del modello component ItemCardsModel
  @use '../assets/styles/partials/variables' as *;
 
+ .cards_section {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+
+     button {
+         align-self: center;
+         background-color: $text_second_color;
+         color: $text_first_color;
+         font-weight: bold;
+         padding: .9375rem 3.125rem;
+         margin: 2.5rem 0 1.25rem 0;
+         border: none;
+         cursor: pointer;
+     }
+
+     #special_btn {
+         position: absolute;
+         font-size: 1.125rem;
+         top: -70px;
+         left: 0px;
+         padding: .9375rem 1.875rem;
+     }
+
+ }
+
  .cards_container {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
 
      .card {
-         margin-top: 1.875rem;
+         margin-top: 3.125rem;
          margin-bottom: .625rem;
          width: 11.25rem;
          height: 11.25rem;
@@ -126,22 +153,5 @@ export default {
          width: 11.875rem;
          margin-bottom: 1.25rem;
      }
- }
-
- .cards_section {
-     display: flex;
-     flex-direction: column;
-
-     button {
-         align-self: center;
-         background-color: $text_second_color;
-         color: $text_first_color;
-         font-weight: bold;
-         padding: .9375rem 3.125rem;
-         margin: 2.5rem 0 1.25rem 0;
-         border: none;
-         cursor: pointer;
-     }
-
  }
 </style>

@@ -47,6 +47,8 @@ main {
 
     .m_container_2 {
         background-color: $text_second_color; //utilizzo della variabile impostata all'inizio di style
+        position: relative; //impostata pos.relative + z-index:1 per priorità background che nasconde l'eccedenza del logo grande DC
+        z-index: 1;
     }
 }
 </style>

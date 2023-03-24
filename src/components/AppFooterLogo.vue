@@ -23,7 +23,6 @@ export default {
     img {
         width: 100%;
         transform: scale(1.5);
-        overflow: hidden; //overflow hidden non nasconde l'eccedenza del logo grande - da sistemare
     }
 }
 </style>
