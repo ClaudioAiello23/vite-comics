@@ -1,14 +1,14 @@
 <!-- PARTE VUE JS-->
 <script>
-import AppMainPhotos from './AppMainPhotos.vue';
-import AppMainCards from './AppMainCards.vue';
+import ItemCards from './ItemCards.vue';
+import AppMainIcons from './AppMainIcons.vue';
 
 
 export default {
     name: 'AppMain',
     components: {
-        AppMainPhotos,
-        AppMainCards
+        ItemCards,
+        AppMainIcons
     },
     data() {
         return {
@@ -23,12 +23,12 @@ export default {
     <main>
         <div class="m_container_1">
             <div class="m_box_1">
-                <AppMainPhotos />
+                <ItemCards />
             </div>
         </div>
         <div class="m_container_2">
             <div class="m_box_2">
-                <AppMainCards />
+                <AppMainIcons />
             </div>
         </div>
     </main>
