@@ -21,20 +21,21 @@ export default {
 <!-- PARTE HTML -->
 <template>
     <header>
-        <!-- Collegamento Logo -->
-        <AppHeaderLogo />
-        <!-- Collegamento menu Nav -->
-        <AppHeaderNav />
+        <div class="h_container">
+            <!-- Collegamento Logo -->
+            <AppHeaderLogo />
+            <!-- Collegamento menu Nav -->
+            <AppHeaderNav />
+        </div>
     </header>
 </template>
 
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
-header {
+.h_container {
     padding: 1.25rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
 }
 </style>

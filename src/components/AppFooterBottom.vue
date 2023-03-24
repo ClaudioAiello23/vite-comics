@@ -29,7 +29,6 @@ export default {
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
 .footer_bottom_container {
-    background-color: #303030;
     padding: 1.875rem;
     display: flex;
     justify-content: space-between;

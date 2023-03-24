@@ -20,14 +20,28 @@ export default {
 <!-- PARTE HTML -->
 <template>
     <footer>
-        <AppFooterNav />
-        <AppFooterBottom />
+        <div class="f_container_1">
+            <div class="f_box_1">
+                <AppFooterNav />
+            </div>
+        </div>
+        <div class="f_container_2">
+            <div class="f_box_2">
+                <AppFooterBottom />
+            </div>
+        </div>
     </footer>
 </template>
 
 <!-- PARTE SCSS-->
 <style lang="scss" scoped>
 footer {
-    background-image: url(../assets/footer-bg.jpg);
+    .f_container_1 {
+        background-image: url(../assets/footer-bg.jpg);
+    }
+
+    .f_container_2 {
+        background-color: #303030;
+    }
 }
 </style>

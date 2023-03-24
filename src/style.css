@@ -10,3 +10,25 @@ RESET RULES
 }
 
 /*
+************************
+VARIABLES
+************************
+*/
+:root {
+    --container_width: 75rem;
+    --container_margin: 0 auto;
+}
+
+/*
+************************
+COMMON RULES
+************************
+*/
+.h_container,
+.m_box_1,
+.m_box_2,
+.f_box_1,
+.f_box_2 {
+    margin: var(--container_margin);
+    width: var(--container_width);
+}

@@ -48,8 +48,6 @@ export default {
 .card_container {
     display: flex;
     justify-content: space-between;
-    background-color: #0282f9;
-
 }
 
 .card_box {
