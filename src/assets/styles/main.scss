@@ -13,6 +13,6 @@ MAIN RULES
 .m_box_2,
 .f_box_1,
 .f_box_2 {
-    margin: var(--container_margin);
-    width: var(--container_width);
+    width: $container_width; //vedi styles/partials/_variables - uso di variabile SCSS
+    margin: $container_margin; //vedi styles/partials/_variables - uso di variabile SCSS
 }

@@ -3,7 +3,13 @@
 VARIABLES
 ************************
 */
-:root {
-    --container_width: 75rem;
-    --container_margin: 0 auto;
-}
+
+// Creazione VARIABLES CON CSS (COMMENTATA)
+// :root {
+//     --container_width: 75rem;
+//     --container_margin: 0 auto;
+// }
+
+// Creazione VARIABILES CON SCSS invece di CSS
+$container_width: 75rem;
+$container_margin: 0 auto;
